@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color:cadetblue;
+}
+
+.container_cv {
+    max-width: 650px;
+    min-height: 850px;
+    background: linear-gradient(to top, #E025CE, #0338F4);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.about_me {
+    max-width: 296px;
+    min-height: 830px;
+    background-color: #C4C4C4;
+    opacity: .3;
+    border-radius: 10px;
+}
