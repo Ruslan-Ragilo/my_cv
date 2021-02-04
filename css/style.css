@@ -342,7 +342,7 @@ h2::before {
     align-items: center;
 } 
 
-.my_skills > .list_skil > div > p {
+.list_skil > div > p {
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
