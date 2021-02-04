@@ -258,17 +258,32 @@ a {
     align-items: center;
 }
 
+.about_experiense {
+    margin-top: 12px;
+}
+
 h2 {
     padding: 3px 30px;
     font-family: Montserrat;
     font-style: normal;
     font-weight: 600;
     font-size: 1em;
+    line-height: 18px;
     color: #FFFFFF;
     background-color: #545454;
     border-radius: 5px;
     text-transform: uppercase;
-    width: 154px;
+    width: 170px;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    width: 90%;
+    border-top: 2px solid #545454;
+    position: absolute;
+    top: 10px;
+    left: 140px;
 }
 
 .company {
@@ -277,6 +292,7 @@ h2 {
     font-weight: bold;
     font-size: 1em;
     color: #343434;
+    line-height: 18px;
 }
 
 .position {
@@ -285,6 +301,7 @@ h2 {
     font-weight: normal;
     font-size: 0.9em;
     color: #343434;
+    line-height: 18px;
 }
 
 .period {
@@ -293,6 +310,7 @@ h2 {
     font-weight: normal;
     font-size: 0.8em;
     color: #73808D;
+    line-height: 18px;
 }
 
 .what_do {
@@ -302,4 +320,52 @@ h2 {
     font-size: 0.85em;  
     line-height: 14px;
     color: rgba(0, 0, 0, 0.8);
+}
+
+.experiense_education {
+    margin-top: 15px;
+}
+
+.my_skills {
+    margin-top: 15px;
+}
+
+.list_skil {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.list_skil > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+.my_skills > .list_skil > div > p {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 18px;
+    color: #545454;
+    margin-top: 5px;
+}
+
+.svg_skills {
+    width: 44px;
+    height: 44px;
+    background-color: rgba(196, 196, 196, 0.4);
+    border-radius: 50%;
+    position: relative;
+}
+
+.svg_skills > svg {
+    position: absolute;
+    top: 7.5px;
+    right: 10px;
+}
+
+.other_skills {
+    margin-top: 15px;
 }
