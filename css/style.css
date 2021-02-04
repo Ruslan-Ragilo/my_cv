@@ -174,7 +174,7 @@ a {
     color: #ffffff;
 }
 
-.list__languages > li {
+.list__languages > .lang > li {
     font-family: 'Calibri', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
@@ -182,15 +182,37 @@ a {
     list-style: none;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
+.list__languages {
+    display: flex;
+}
 
+.list__languages >  .flex_dots {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 5px;
+}
 
-.list__languages > li > span {
+.list__languages >  .flex_dots > .dots > div{
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background-color: rgba(84, 84, 84, 0.6);
+    background-color: rgba(84, 84, 84, 0.6);    
+    margin-left: 4px;
+    margin-top: 5px;
+}
+
+.list__languages > .flex_dots > .dots {
+    display: flex;
+}
+
+.lang {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .list__Social > li {
@@ -234,4 +256,50 @@ a {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+}
+
+h2 {
+    padding: 3px 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1em;
+    color: #FFFFFF;
+    background-color: #545454;
+    border-radius: 5px;
+    text-transform: uppercase;
+    width: 154px;
+}
+
+.company {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1em;
+    color: #343434;
+}
+
+.position {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.9em;
+    color: #343434;
+}
+
+.period {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.8em;
+    color: #73808D;
+}
+
+.what_do {
+    font-family: Calibri;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 0.85em;  
+    line-height: 14px;
+    color: rgba(0, 0, 0, 0.8);
 }
