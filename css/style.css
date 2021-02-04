@@ -356,16 +356,22 @@ h2::before {
     width: 44px;
     height: 44px;
     background-color: rgba(196, 196, 196, 0.4);
-    border-radius: 50%;
     position: relative;
+    border-radius: 50%;
 }
 
 .svg_skills > svg {
     position: absolute;
-    top: 7.5px;
-    right: 10px;
+    top: 9px;
+    right: 9px;
 }
 
 .other_skills {
     margin-top: 15px;
+}
+
+.boreder {
+    padding: 3px;
+    border: 3px solid #3B5999;
+    border-radius: 50%;
 }
