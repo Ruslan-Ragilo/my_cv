@@ -229,11 +229,14 @@ a {
 }
 
 .list__Social > li {
+    list-style: none;
+}
+
+.list__Social > li > a {
     font-family: 'Calibri', sans-serif;
     font-weight: 400;
     font-size: 1.1em;
     color: #ffffff;
-    list-style: none;
 }
 
 .bg_container_for_hobbies {
@@ -289,6 +292,7 @@ h2 {
     text-transform: uppercase;
     width: 170px;
     position: relative;
+    margin-top: 20px;
 }
 
 h2::before {
@@ -410,4 +414,22 @@ h2::before {
 
 .other_skills > div > div {
     margin: 30px 0 0 20px;
+}
+
+@media screen and (max-width: 616px) {
+    .container_cv {
+        display: flex!important;
+        flex-direction: column!important;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about_me {
+        min-width: 310px;
+    }
+
+    .education_and_skill {
+        min-width: 310px;
+        margin-top: 15px;
+    }
 }
