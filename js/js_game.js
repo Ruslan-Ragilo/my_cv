@@ -1,6 +1,6 @@
 let startGame = document.querySelector('.button_game');
 let game = document.getElementById("game")
-
+let block = document.querySelectorAll('.block');
  
 startGame.onclick = function () {
     
@@ -13,6 +13,8 @@ document.addEventListener('mousedown', function(e){
         game.style.display = 'none';
     }
 });
+
+
 window.onload = function(){
 	for (var i=0; i<9; i++) {
 		document.getElementById('game').innerHTML+='<div class="block"></div>';
